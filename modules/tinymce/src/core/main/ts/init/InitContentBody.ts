@@ -403,7 +403,6 @@ const startProgress = (editor: Editor) => {
 
 const contentBodyLoaded = (editor: Editor): void => {
   const targetElm = editor.getElement();
-
   const doc = editor.getDoc();
   const win = editor.getWin();
 
