@@ -403,8 +403,8 @@ const startProgress = (editor: Editor) => {
 
 const contentBodyLoaded = (editor: Editor): void => {
   const targetElm = editor.getElement();
-  let doc = editor.getDoc();
-  let win = editor.getWin();
+  const doc = editor.getDoc();
+  const win = editor.getWin();
 
   if (editor.inline) {
     DOM.addClass(targetElm, 'mce-content-body');
