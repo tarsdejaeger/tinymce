@@ -90,6 +90,8 @@ interface BaseEditorOptions {
   custom_elements?: string | Record<string, CustomElementSpec>;
   custom_ui_selector?: string;
   custom_undo_redo_levels?: number;
+  custom_window?: Window;
+  custom_document?: Document;
   default_font_stack?: string[];
   deprecation_warnings?: boolean;
   directionality?: 'ltr' | 'rtl';

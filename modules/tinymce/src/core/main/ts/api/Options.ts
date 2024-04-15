@@ -432,6 +432,16 @@ const register = (editor: Editor): void => {
     default: 0
   });
 
+  registerOption('custom_document', {
+    processor: 'object',
+    default: document
+  });
+
+  registerOption('custom_window', {
+    processor: 'object',
+    default: window
+  });
+
   registerOption('disable_nodechange', {
     processor: 'boolean',
     default: false
@@ -929,6 +939,8 @@ const shouldPatchSubmit = option('submit_patch');
 const shouldAddFormSubmitTrigger = option('add_form_submit_trigger');
 const shouldAddUnloadTrigger = option('add_unload_trigger');
 const getCustomUndoRedoLevels = option('custom_undo_redo_levels');
+const getCustomWindow = option('custom_window');
+const getCustomDocument = option('custom_document');
 const shouldDisableNodeChange = option('disable_nodechange');
 const isReadOnly = option('readonly');
 const hasEditableRoot = option('editable_root');
@@ -1041,6 +1053,8 @@ export {
   shouldAddFormSubmitTrigger,
   shouldAddUnloadTrigger,
   getCustomUndoRedoLevels,
+  getCustomDocument,
+  getCustomWindow,
   shouldDisableNodeChange,
   isReadOnly,
   hasEditableRoot,
