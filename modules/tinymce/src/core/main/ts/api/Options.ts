@@ -434,12 +434,12 @@ const register = (editor: Editor): void => {
 
   registerOption('custom_document', {
     processor: 'object',
-    default: document
+    default: undefined
   });
 
   registerOption('custom_window', {
     processor: 'object',
-    default: window
+    default: undefined
   });
 
   registerOption('disable_nodechange', {
